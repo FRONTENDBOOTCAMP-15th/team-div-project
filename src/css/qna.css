@@ -1,0 +1,75 @@
+body {
+  border: 2px solid red;
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 37.9px;
+  margin-bottom: 1rem;
+}
+
+.qna-item {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+.qna-item header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.qna-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  inline-size: auto;
+  block-size: 56px;
+  align-content: center;
+}
+
+.qna-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.qna-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* 기본: + 보이고 - 숨김 */
+.qna-toggle .icon-plus {
+  display: inline-block;
+}
+.qna-toggle .icon-minus {
+  display: none;
+}
+
+/* 열리면 반대로 */
+.qna-item.open .qna-toggle .icon-plus {
+  display: none;
+}
+.qna-item.open .qna-toggle .icon-minus {
+  display: inline-block;
+}
+
+/* 답변 */
+.answer {
+  display: none;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.qna-item.open .answer {
+  display: block;
+}
