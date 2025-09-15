@@ -1,3 +1,10 @@
+:root {
+  --blue-500: #0075ff;
+  --contentPrimary: #000000;
+  --accent: var(--blue-500);
+  --primary: var(--blue-500);
+  --secondary: #ffffff;
+}
 /* 상단 배너 */
 .hero {
   display: flex;
@@ -33,7 +40,7 @@
 
 .hero-text h1 {
   font-size: 2rem;
-  color: #1a73e8;
+  color: var(--primary);
   margin-bottom: 16px;
 }
 
@@ -43,7 +50,7 @@
 }
 
 .btn-download {
-  background: #1a73e8;
+  background: var(--primary);
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -66,8 +73,8 @@
   display: flex;
   justify-content: space-around;
   padding: 60px 80px;
-  background: white;
-  border-top: 2px solid #1a73e8;
+  background: var(--secondary);
+  border-top: 2px solid var(--primary);
 }
 
 .card {
@@ -77,7 +84,7 @@
 
 .card h3 {
   font-size: 1.2rem;
-  color: #1a73e8;
+  color: var(--primary);
   margin-bottom: 12px;
 }
 
@@ -89,7 +96,7 @@
 
 .card a {
   font-size: 0.9rem;
-  color: black;
+  color: var(--contentPrimary);
   text-decoration: underline;
   font-weight: bold;
 }
