@@ -1,0 +1,139 @@
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ut-container {
+  width: 100%;
+  max-width: 1680px;
+  padding: 64px;
+  text-align: center;
+  padding-left: calc(20px + 40px);
+}
+
+.ut-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--textPrimary-color);
+  margin-bottom: 28px;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+}
+
+.ut-card {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: var(--textPrimary-color);
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.ut-logo img {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 500;
+  flex-grow: 1;
+  margin: 0 20px;
+  text-align: center;
+  padding: 9px;
+}
+
+.arrow-icon {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+/* ------------------ Tablet Layout ------------------ */
+@media (min-width: 850px) and (max-width: 1679px) {
+  .card-wrapper {
+    gap: 15px;
+  }
+
+  .ut-card {
+    padding: 25px 35px;
+  }
+
+  .card-content {
+    justify-content: space-between;
+  }
+
+  .ut-logo img {
+    width: 70px;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    margin: 0 15px;
+  }
+
+  .arrow-icon {
+    font-size: 2.2rem;
+  }
+}
+
+/* ------------------ Mobile Layout ------------------ */
+@media (max-width: 849px) {
+  .ut-title {
+    font-size: 1.2rem;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .ut-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ut-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .arrow-icon {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+}
