@@ -8,17 +8,14 @@ FRONTENDBOOTCAMP-15th UI Practice
 
 멋사 15기 회고 2조 팀 DIV 방범대 팀원들을 소개합니다.
 
-### 👤조장
-
-- 백승준
-
-### 👥조원
-
-- 김하연
-- 박한섭
-- 방명규
-- 이수진
-- 이유진
+| 역할   | 이름   | GitHub 주소                                     |
+| ------ | ------ | ----------------------------------------------- |
+| 👑조장 | 백승준 | [seungjunn100](https://github.com/seungjunn100) |
+| 👤조원 | 김하연 | [0hdora0](https://github.com/0hdora0)           |
+| 👤조원 | 박한섭 | [LionSeopBong](https://github.com/LionSeopBong) |
+| 👤조원 | 방명규 | [matthewb2](https://github.com/matthewb2)       |
+| 👤조원 | 이수진 | [esjsjsj](https://github.com/esjsjsj)           |
+| 👤조원 | 이유진 | [Ujin1122](https://github.com/Ujin1122)         |
 
 <br />
 
