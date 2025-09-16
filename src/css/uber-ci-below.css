@@ -70,6 +70,7 @@ body {
 .card p {
   font-size: 0.95rem;
   color: var(--contentPrimary);
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
@@ -105,7 +106,7 @@ body {
     display: flex;
     flex-direction: column; /* 세로 배치 */
     flex-grow: 1;
-    gap: 0;
+    gap: 30px;
   }
   .card {
     flex-grow: 1;
