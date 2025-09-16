@@ -10,8 +10,8 @@
   --textPrimary-color: #000000;
   --textSecondary-color: #6b6b6b;
   --textTertiary-color: #a6a6a6;
-  --border-color: #898989;
-  --borderBackground-color: rgba(137, 137, 137, 0.3);
+  --border-color: rgba(137, 137, 137, 0.3);
+  --borderBackground-color: #f5f5f5;
   --positiveBackground-color: rgba(4, 136, 72, 0.1);
   --negativeBackground-color: rgba(225, 25, 0, 0.1);
 
@@ -25,6 +25,6 @@
 
   /* viewport size */
   --mobile-size: 320px;
-  --tablet-size: 60px;
+  --tablet-size: 600px;
   --desktop-size: 1136px;
 }
