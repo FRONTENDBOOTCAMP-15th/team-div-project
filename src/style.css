@@ -1,4 +1,95 @@
-/* CSS 스타일을 작성해 주세요. */
+body {
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+/* header ******************************************************************/
+.header-container {
+  background: #000000;
+  height: 88px;
+  width: 100%;
+  display: flex;
+
+  svg {
+    height: 39px;
+  }
+  div {
+    color: white;
+  }
+  .item-container {
+    width: 100%;
+    margin: 16px 100px;
+    font-size: 18px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    .a-container {
+      margin-left: 50px;
+      align-items: center;
+      gap: 4px; /* 화살표와 텍스트 간격 */
+      a {
+        margin-right: 20px;
+        height: 40px;
+        width: 112px;
+        /* border: 1px solid red; */
+      }
+    }
+    .end-item {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        border-radius: 15px;
+        height: 40px;
+        width: 68px;
+        border: 0 none;
+        font-size: 14px;
+        flex-flow: row nowrap;
+      }
+      p {
+        font-size: 24px;
+      }
+      img {
+        height: 24px;
+      }
+      @media (width <= 1024px) {
+        p,
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (width <= 1024px) {
+    .a-container {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      position: relative;
+      .bar {
+        padding: 3px;
+        margin-top: 5px;
+        margin-left: 10px;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  @media (width >= 1024px) {
+    .hamburger-menu {
+      display: none;
+    }
+  }
+}
+/* header ******************************************************************/
+
 /* 상단 배너 */
 .banner {
   background-image: url('./assets/images/UberTaxi_desktop.png');
@@ -103,96 +194,201 @@
   }
 }
 
-body {
-  font-family: 'Pretendard Variable', sans-serif;
-}
-/* header ******************************************************************/
-.header-container {
-  background: #000000;
-  height: 88px;
-  width: 100%;
-  display: flex;
+/* apply */
+.inner-wrapper {
+  padding: 40px 24px;
 
-  svg {
-    height: 39px;
+  @media (width >= 600px) {
+    padding: 56px 32px;
   }
-  div {
-    color: white;
-  }
-  .item-container {
-    width: 100%;
-    margin: 16px 100px;
-    font-size: 18px;
+
+  @media (width >= 1136px) {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    .a-container {
-      margin-left: 50px;
-      align-items: center;
-      gap: 4px; /* 화살표와 텍스트 간격 */
-      a {
-        margin-right: 20px;
-        height: 40px;
-        width: 112px;
-        /* border: 1px solid red; */
+    inline-size: 1280px;
+    max-inline-size: 100%;
+    margin: 0 auto;
+    padding: 64px;
+  }
+}
+
+.section-title,
+form {
+  @media (width >= 600px) {
+  }
+
+  @media (width >= 1136px) {
+    inline-size: 50%;
+  }
+}
+
+.section-title {
+  margin-block-end: 36px;
+  color: var(--textPrimary-color);
+  font-size: var(--text-x-l-size);
+
+  @media (width >= 600px) {
+    font-size: var(--text-x-x-l-size);
+  }
+
+  @media (width >= 1136px) {
+    margin-block-end: 0;
+    font-size: var(--text-x-x-x-l-size);
+  }
+}
+
+.form-flex {
+  --gap-size: 16px;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: var(--gap-size);
+
+  .input,
+  .select {
+    inline-size: 100%;
+  }
+
+  a {
+    padding: 4px;
+    color: var(--textPrimary-color);
+    font-size: var(--text-m-size);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6;
+  }
+
+  .form-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    inline-size: 100%;
+    margin-block-end: 20px;
+
+    h3 {
+      color: var(--textPrimary-color);
+      font-size: var(--text-l-size);
+
+      @media (width >= 600px) {
+        font-size: var(--text-x-x-l-size);
+      }
+
+      @media (width >= 1136px) {
+        margin-block-end: 0;
+        font-size: var(--text-x-x-x-l-size);
       }
     }
-    .end-item {
+
+    .more-view {
       margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      button {
-        border-radius: 15px;
-        height: 40px;
-        width: 68px;
-        border: 0 none;
-        font-size: 14px;
-        flex-flow: row nowrap;
+    }
+  }
+
+  .input {
+    position: relative;
+
+    &.half {
+      inline-size: calc((100% - var(--gap-size)) / 2);
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      color: var(--textSecondary-color);
+      font-size: var(--text-m-size);
+      line-height: 22px;
+      background: var(--borderBackground-color);
+      border: 1px solid var(--border-color);
+
+      &.driverPassword {
+        padding-right: 46px;
       }
-      p {
-        font-size: 24px;
+
+      &:user-valid {
+        background: var(--positiveBackground-color);
+        border-color: transparent;
+        outline: 2px solid var(--positive-color);
       }
-      img {
-        height: 24px;
-      }
-      @media (width <= 1024px) {
-        p,
-        img {
-          display: none;
+
+      &:user-invalid {
+        background: var(--negativeBackground-color);
+        border-color: transparent;
+        outline: 2px solid var(--negative-color);
+
+        & ~ .error-message {
+          display: block;
+        }
+
+        & ~ .password-reset-button {
+          display: block;
         }
       }
     }
-  }
-  @media (width <= 1024px) {
-    .a-container {
+
+    .error-message {
       display: none;
+      margin-block-start: 5px;
+      color: var(--negative-color);
+      font-size: var(--text-s-size);
     }
-    .hamburger-menu {
-      display: block;
-      width: 30px;
-      height: 20px;
-      cursor: pointer;
-      position: relative;
-      .bar {
-        padding: 3px;
-        margin-top: 5px;
-        margin-left: 10px;
+
+    .password-reset-button {
+      display: none;
+      position: absolute;
+      inset-inline-end: 1px;
+      inset-block-start: 1px;
+      padding: 11px;
+      background: transparent;
+      border: none;
+
+      svg {
         display: block;
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        margin-bottom: 5px;
       }
     }
   }
-  @media (width >= 1024px) {
-    .hamburger-menu {
-      display: none;
+
+  .select {
+    select {
+      inline-size: 100%;
+      block-size: 50px;
+      padding: 0 12px;
+      color: var(--textPrimary-color);
+      font-size: var(--text-m-size);
+      font-weight: 600;
+      background: var(--borderBackground-color);
+      border: 1px solid var(--border-color);
+      appearance: none;
     }
   }
+
+  .notice-message {
+    margin-block: 20px;
+    color: var(--textPrimary-color);
+    font-size: var(--text-s-size);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .submit-button {
+    margin-inline-end: 20px;
+    padding: 20px 24px;
+    color: var(--secondary-color);
+    font-size: var(--text-m-size);
+    font-weight: 500;
+    line-height: var(--text-m-size);
+    background: var(--primary-color);
+    border: none;
+  }
+
+  .login-message {
+    color: var(--textPrimary-color);
+    font-size: var(--text-s-size);
+    font-weight: 500;
+  }
 }
-/* header ******************************************************************/
+
 /* footer ******************************************************************/
 
 footer {

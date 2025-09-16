@@ -82,5 +82,61 @@
         <a href="#">자세히보기</a>
       </div>
     </div>
+    
+    <section class="section-form">
+      <div class="inner-wrapper">
+        <h2 class="section-title">UT로 운행하기</h2>
+
+        <form action="">
+          <div class="form-flex">
+            <div class="form-title">
+              <h3>기사로 가입하기</h3>
+              <a href="/" class="more-view">자세히보기</a>
+            </div>
+            <div class="input half">
+              <label for="driverLsatName" class="sr-only">이름을 입력해주세요.</label>
+              <input type="text" name="driverLsatName" id="driverLsatName" required placeholder="이름" />
+            </div>
+            <div class="input half">
+              <label for="driverFirstName" class="sr-only">성을 입력해주세요.</label>
+              <input type="text" name="driverFirstName" id="driverFirstName" required placeholder="성" />
+            </div>
+            <div class="input">
+              <label for="driverEmail" class="sr-only">이메일을 입력해주세요.</label>
+              <input type="email" name="driverEmail" id="driverEmail" required placeholder="이메일" />
+              <p class="error-message">이메일을 다시 입력해주세요.</p>
+            </div>
+            <div class="input">
+              <label for="driverPassword" class="sr-only">비밀번호를 입력해주세요.</label>
+              <input type="password" name="driverPassword" id="driverPassword" class="driverPassword" required pattern="^([a-z0-9_]){6,50}$" placeholder="비밀번호" />
+              <button type="button" class="password-reset-button">
+                <span class="sr-only">reset button</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M18 6L6 18" stroke="#E11900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6 6L18 18" stroke="#E11900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <p class="error-message">비밀번호를 다시 입력해주세요.</p>
+            </div>
+            <div class="input">
+              <label for="driverTel" class="sr-only">전화번호를 입력해주세요.</label>
+              <input type="tel" name="driverTel" id="driverTel" required placeholder="전화번호" />
+            </div>
+            <div class="select">
+              <select name="driverLocation" id="driverLocation" required>
+                <option value="">Seoul, Korea, Republic of (South Korea)</option>
+                <option value="">Tokyo, Japan</option>
+                <option value="">London, United Kingdom</option>
+                <option value="">New York, United States</option>
+              </select>
+            </div>
+            <p class="notice-message">'계속'을 선택하면 약관과 개인정보 보호정책을 확인했으며 이에 동의한 것으로 간주됩니다. 또한 위에 입력한 번호로 UT LLC 및 그 제휴가(통칭하여 'UT')가 ARS 등을 이용하여 정보제공이나 마케팅 목적으로 발신하는 전화나 SMS 메시지를 수신하는 데 동의합니다. 마케팅 메시지 수신 동의는 UT 서비스 이용을 위한 필수 조건은 아닙니다. 더 이상 메시지 수신을 원하지 않으시는 경우, 89203번으로 'STOP'이라고 문자 메시지를 보내 수신을 거부하실 수 있습니다.</p>
+            <button type="submit" class="submit-button">가입하기</button>
+            <p class="login-message">이미 계정이 있으신가요?</p>
+            <a href="/" class="go-login">로그인</a>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
