@@ -8,6 +8,18 @@ FRONTENDBOOTCAMP-15th UI Practice
 
 멋사 15기 회고 2조 팀 DIV 방범대 팀원들을 소개합니다.
 
+### 👤조장
+
+- 백승준
+
+### 👥조원
+
+- 김하연
+- 박한섭
+- 방명규
+- 이수진
+- 이유진
+
 <br />
 
 ## Team Rules
@@ -17,7 +29,7 @@ FRONTENDBOOTCAMP-15th UI Practice
 #### 커밋 메시지
 
 - `feature:`, `fix:`, `docs:`, `style:`, ...
-ex ) feature : header 추가
+  ex ) feature : header 추가
 
 ### 폴더·파일 네이밍
 
