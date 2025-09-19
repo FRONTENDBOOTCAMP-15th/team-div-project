@@ -8,7 +8,6 @@
     <link rel="stylesheet" as="style" href="/public/font/pretendardvariable.css" />
     <link rel="stylesheet" href="./src/common/index.css" />
     <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./src/css/uber-ci-below.css" />
     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
@@ -40,32 +39,31 @@
       </div>
     </header>
     
-    <div class="banner">
-      <div class="banner-text">
-        <h1>우리들의 택시, UT</h1>
-        <p>UT로 안전하고 편리한 차량 서비스를 이용하세요.</p>
-        <button class="btn-download">
+    <section class="banner bg-contain bg-no-repeat h-[399px] w-auto py-[30px]">
+      <div class="banner-text py-[30px] px-[24px] color-(--primary)">
+        <h1 class="text-[50.52px] font-medium color-(--primary)">우리들의 택시, UT</h1>
+        <p class="color-(--primary)">UT로 안전하고 편리한 차량 서비스를 이용하세요.</p>
+        <button class="btn-download background-current text-[#fff] py-[12px] px-[24px] border-none cursor-pointer text-base flex flex-row flex-nowrap justify-center items-center">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.29289 9.70711L11.2929 14.7071L12 15.4142L12.7071 14.7071L17.7071 9.70711L16.2929 8.29289L13 11.5858V4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4H11L11 11.5858L7.70711 8.29289L6.29289 9.70711Z" fill="white" />
           </svg>
-
-          앱 다운로드
+          <span>앱 다운로드</span>
         </button>
       </div>
-    </div>
+    </section>
 
     <!-- Info Section -->
-    <div class="info">
+    <section class="info flex px-[24px] py-[20px] background-(--secondary) gap-[30px]">
       <div class="card">
-        <h3>
+        <h3 class="text-[21.3px] color-(--primary) flex flex-column gap-[16px]">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21V13M12 21L5.83752 16.5982C5.42695 16.305 5.22166 16.1583 5.11083 15.943C5 15.7276 5 15.4753 5 14.9708V8M12 21L18.1625 16.5982C18.573 16.305 18.7783 16.1583 18.8892 15.943C19 15.7276 19 15.4753 19 14.9708V8M12 13L5 8M12 13L19 8M5 8L10.8375 3.83034C11.3989 3.42938 11.6795 3.2289 12 3.2289C12.3205 3.2289 12.6011 3.42938 13.1625 3.83034L19 8" stroke="#0075FF" stroke-width="2" stroke-linejoin="round" />
           </svg>
 
           회사소개
         </h3>
-        <p>UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
-        <a href="#">자세히보기</a>
+        <p class="text-base color-(--contentPrimary) my-[16px]">UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
+        <a class="text-base color-(--contentPrimary) font-bold no-underline px-[5px] py-[3px] " href="#">자세히보기</a>
       </div>
       <div class="card">
         <h3>
@@ -81,7 +79,7 @@
         <p>UT의 회사 연혁과 핵심 가치 및 UT가 창출하는 다양한 기회에 대해 알아보세요.</p>
         <a href="#">자세히보기</a>
       </div>
-    </div>
+    </section>
     
     <div class="ut-container">
       <p class="ut-title">UT 앱에서 더욱 다양한 기능을 만나보세요</p>
