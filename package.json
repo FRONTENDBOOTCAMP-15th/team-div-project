@@ -2,8 +2,6 @@
   "name": "vite-css",
   "type": "module",
   "scripts": {
-    "start": "live-server . --port=8080 --host=localhost --no-browser",
-    "format": "prettier . --check",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -11,9 +9,12 @@
     "all": "run-s clean build preview"
   },
   "devDependencies": {
-    "live-server": "^1.2.2",
+    "@tailwindcss/cli": "^4.1.13",
+    "@tailwindcss/postcss": "^4.1.13",
+    "autoprefixer": "^10.4.21",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.6.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
     "vite": "^6.3.6"
   }
 }

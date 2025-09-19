@@ -1,4 +1,6 @@
 import { defineConfig } from "vite";
+import tailwind from '@tailwindcss/postcss'
+import autoprefixer from 'autoprefixer'
 import path from "path";
 import fs from "fs";
 
@@ -28,6 +30,14 @@ function findAllHtmlFiles(directory) {
 }
 
 export default defineConfig({
+      css: {
+    postcss: {
+      plugins: [
+        tailwind(),
+        autoprefixer(),
+      ],
+    },
+  },
   build: {
     rollupOptions: {
       input: {
